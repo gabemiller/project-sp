@@ -1,0 +1,7 @@
+app/config/development
+app/config/testing
+vendor/*
+.idea
+design/node_modules
+design/bower_components
+bootstrap/compiled.php

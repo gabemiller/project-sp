@@ -38,6 +38,15 @@ class InstallCommand extends Command {
 	 */
 	public function fire()
 	{
+
+        $this->info('Start install');
+
+        $this->migrateTables();
+
+        $this->createMenus();
+
+        $this->info('Now we will create an admin user:');
+
 		while (true){
             $name = $this->ask('What is your name? ');
             $email = $this->ask('What is your email? ');
@@ -46,12 +55,11 @@ class InstallCommand extends Command {
             if(strcmp($password,$confirmPassword) == 0){
                 $this->info('Name: '.$name);
                 $this->info('Email: '.$email);
-                if($this->confirm('Does everything correct? [yes|no]')){
+                if($this->confirm('Is everything correct? [yes|no]')){
 
                     $this->createUser($name,$email,$password);
                     $this->createUserGroups();
                     $this->assignUsersAndUserGroups($email);
-                    $this->createMenus();
 
                     $this->info('Successful installation!');
                     break;
@@ -84,6 +92,24 @@ class InstallCommand extends Command {
 		);
 	}
 
+    /**
+     *
+     */
+    private function migrateTables(){
+        $this->info('Start migration...');
+
+        Artisan::call('migrate',['--package'=>'cartalyst/sentry']);
+        Artisan::call('migrate',['--package'=>'rtconner/laravel-tagging']);
+        Artisan::call('migrate');
+
+        $this->info('Migration finished successfully!');
+    }
+
+    /**
+     * @param $name
+     * @param $email
+     * @param $password
+     */
 	private function createUser($name,$email,$password){
         $this->info('Creating user...');
 
@@ -100,6 +126,9 @@ class InstallCommand extends Command {
         $this->info('User is successfully created!');
     }
 
+    /**
+     *
+     */
     private function createUserGroups(){
         $this->info('Creating usergroups...');
 
@@ -113,6 +142,9 @@ class InstallCommand extends Command {
         $this->info('Usergroups are succesfully created!');
     }
 
+    /**
+     * @param $email
+     */
     private function assignUsersAndUserGroups($email){
         $this->info('Assigning users and usergroups...');
 
@@ -123,6 +155,9 @@ class InstallCommand extends Command {
         $this->info('Assignation is succesfully finished!');
     }
 
+    /**
+     *
+     */
     private function createMenus(){
         $this->info('Creating menu...');
 

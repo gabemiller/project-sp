@@ -28,10 +28,10 @@
 
     <title>{{Setting::get('site-title')}} @if(!empty($title)) {{'- '.$title }} @endif</title>
 
-    {{ HTML::style('css/app.css') }}
+    {{ HTML::style('css/app.min.css') }}
 
 </head>
-<body @if($bodyClass) class="{{$bodyClass}}" @endif>
+<body class="{{$bodyClass or 'layout-default'}}">
 
     @include('_frontend.header')
 
@@ -61,8 +61,8 @@
 
     @include('_frontend.footer')
 
-    {{ HTML::script('scripts/vendor.js'); }}
-    {{ HTML::script('scripts/app.js'); }}
+    {{ HTML::script('scripts/vendor.min.js'); }}
+    {{ HTML::script('scripts/app.min.js'); }}
 
 </body>
 </html>

@@ -9,5 +9,5 @@
 
 // Convert px to rem
 @function convertPXtoREM($value){
-  @return $value / $base-font-size + 0rem;
+  @return $value / $baseFontSize + 0rem;
 }

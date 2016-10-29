@@ -21,6 +21,6 @@ View::composer(['site.gallery.index','site.gallery.show'], function ($view) {
     View::share('bodyClass', 'layout-article');
 });
 
-View::composer('site.page.show', function ($view) {
-    View::share('bodyClass', 'layout-default');
+View::composer(['maintenance'], function ($view) {
+    View::share('bodyClass', 'layout-maintenance');
 });

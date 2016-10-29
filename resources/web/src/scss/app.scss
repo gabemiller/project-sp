@@ -55,6 +55,9 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
+// Vendors
+
+@import "../../bower_components/animate.css/animate.css";
 
 // App
 // Base
@@ -62,8 +65,10 @@
 @import "base/mixins";
 @import "base/fonts";
 @import "base/icons";
+@import "base/helper";
 @import "base/default";
 
-// Components
+// Layouts
+@import "layouts/layout-maintenance";
 
-// Vendors
+// Components

@@ -1,24 +1,31 @@
 /**
- * Created by Gábor on 2016. 10. 26..
+ * Created by Gabor Molnar on 2016. 10. 26..
  */
 
 var gulpConfig = {
+    /**
+     * File paths
+     */
     path : {
         scss : {
             src : './src/scss/app.scss',
-            dest: './dist/css'
+            dest: '../../public/css'
+        },
+        googleFonts : {
+            src : './src/fonts/fonts.list',
+            dest: '../../public'
         },
         vendor : {
-            dest: './dist/scripts'
+            dest: '../../public/scripts'
         },
         webpack : {
             src : './src/js/app.js',
-            dest: './dist/scripts'
+            dest: '../../public/scripts'
         },
         image : {
             src : './src/images/*.{gif,jpg,png,svg}',
-            dest: './dist/images',
-            rm  : './dist/images/*.{gif,jpg,png,svg}'
+            dest: '../../public/images',
+            rm  : '../../public/images/*.{gif,jpg,png,svg}'
         },
         pug : {
             src : './src/views/*.pug',
@@ -34,6 +41,9 @@ var gulpConfig = {
             images : 'src/images/**/*.{gif,jpg,png,svg}'
         }
     },
+    /**
+     * Output filenames
+     */
     fileName : {
         scss : {
             prefix: '',
@@ -50,6 +60,16 @@ var gulpConfig = {
             basename : 'app',
             suffix: '.min'
         }
+    },
+    /**
+     * Google fonts
+     *
+     * FontsDir and cssDir are relative to gulp.dest path.
+     */
+    googleFontsConfig : {
+        fontsDir: './fonts',
+        cssDir: '../resources/web/src/scss/base',
+        cssFilename: '_fonts.scss'
     }
 };
 

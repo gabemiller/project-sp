@@ -22,6 +22,8 @@ var webpack = require("webpack-stream");
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 var cleanCss = require('gulp-clean-css');
+var googleWebFonts = require('gulp-google-webfonts');
+var modifyCssUrls = require('gulp-modify-css-urls');
 
 /**
  *  Gulp config
@@ -46,6 +48,33 @@ gulp.task('scss', function() {
         .pipe(gulp.dest(path.scss.dest))
         .pipe(connect.reload());
 });
+
+/**
+ * Gulp Task
+ *
+ * Download and create css for google fonts
+ *
+ */
+
+gulp.task('google-fonts', function () {
+    var config = require('./gulp.config').googleFontsConfig;
+    return gulp.src(path.googleFonts.src)
+        .pipe(googleWebFonts(config))
+        .pipe(gulp.dest(path.googleFonts.dest));
+});
+
+gulp.task('fonts-url-fix',['google-fonts'],function () {
+    return gulp.src('./src/scss/base/_fonts.scss')
+        .pipe(modifyCssUrls({
+            modify: function (url, filePath) {
+                return url;
+            },
+            prepend: '../'
+        }))
+        .pipe(gulp.dest('./src/scss/base/'));
+});
+
+gulp.task('fonts',['google-fonts','fonts-url-fix']);
 
 /**
  * Gulp Task
@@ -122,7 +151,7 @@ gulp.task('images-remove', function () {
         .pipe(rimraf());
 });
 
-gulp.task('images', ['images-remove', 'images-optimize']);
+gulp.task('images', ['images-optimize']);
 
 /**
  * Gulp Task
@@ -176,3 +205,5 @@ gulp.task('watch', function () {
  * Initialize all tasks and watchers.
  */
 gulp.task('init', ['pug', 'scss', 'vendor', 'webpack', 'images','watch', 'webserver']);
+
+gulp.task('default', ['scss','vendor','webpack']);

@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="./favicon/manifest.json">
-    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#d5805b">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="{{Setting::get('site-title')}}">
     <meta name="application-name" content="{{Setting::get('site-title')}}">
-    <meta name="msapplication-TileColor" content="#009fe3">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <title>{{Setting::get('site-title')}} @if(!empty($title)) {{'- '.$title }} @endif</title>
 
-    {{ HTML::style('css/bootstrap.min.css') }}
-    {{ HTML::style('css/animate.css') }}
-    {{ HTML::style('css/maintenance.css') }}
+    {{ HTML::style('css/app.min.css') }}
 
 </head>
-<body class="maintaince">
-
-<div class="center-container">
-    <div class="logo-hospice animated fadeInDown delay-1">{{Setting::get('site-title')}}</div>
-    <p class="maintaince-text animated fadeInUp delay-2">
-        A weboldal karbantartás alatt áll. <br>Kérjük látogasson vissza később!
-    </p>
-    <span class="border-1"></span>
-    <span class="border-2"></span>
-    <span class="border-3"></span>
-    <span class="border-4"></span>
+<body class="{{$bodyClass or 'layout-maintenance'}}">
+<div style="display: none;visibility: hidden; width: 0;height: 0;position: absolute;z-index: -2">
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 463.406 463.406" style="enable-background:new 0 0 463.406 463.406;" xml:space="preserve">
+        <polygon points="378.936,116.465 262.471,116.465 262.471,0 200.935,0 200.935,116.465 84.47,116.465 84.47,178.002
+            200.935,178.002 200.935,463.406 262.471,463.406 262.471,178.002 378.936,178.002 "/>
+    </svg>
+</div>
+<div class="maintenance-box">
+    <div class="maintenance-box__background" style="background-image: url('images/templom-koszonto.jpg');"></div>
+    <section class="maintenance-box__text">
+        <div class="maintenance-box__text__cross animated fadeInDown delay-2">
+            <svg>
+                <use xlink:href="#cross"></use>
+            </svg>
+        </div>
+        <p class="animated fadeInUp delay-7">Dicsőség Jézus Krisztusnak!</p>
+        <p class="animated fadeInUp delay-10">Az oldalunk jelenleg karbantartás alatt áll.<br>
+            Kérjük, látogasson vissza később!</p>
+    </section>
 </div>
 
 </body>

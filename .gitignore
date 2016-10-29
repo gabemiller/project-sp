@@ -1,7 +1,7 @@
 app/config/development
-app/config/testing
 vendor/*
 .idea
-design/node_modules
-design/bower_components
+resources/web/node_modules
+resources/web/bower_components
 bootstrap/compiled.php
+_ide_helper.php

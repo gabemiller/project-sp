@@ -1,0 +1,11 @@
+// Delays for animations
+
+$msAnimation: 100;
+$i: 1;
+@while $msAnimation < 2000{
+  .delay-#{$i} {
+    animation-delay: #{$msAnimation}ms;
+  }
+  $msAnimation: $msAnimation + 100;
+  $i: $i + 1;
+}

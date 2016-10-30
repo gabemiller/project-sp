@@ -1,0 +1,72 @@
+.btn{
+  display: inline-block;
+  font-weight: 700;
+  font-family: $fontRoboto;
+  padding: 0 14px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 400ms $t;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  &:visited, &:focus{
+    text-decoration: none;
+  }
+  &:hover{
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+  }
+  &:active{
+    text-decoration: none;
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  }
+}
+
+.btn--default{
+  background-color: white;
+  color: $colorPurple;
+  &:hover{
+    color: lighten($colorPurple,10%);
+  }
+}
+
+.btn--purple{
+  background-color: $colorPurple;
+  color: white;
+  &:hover{
+    color: white;
+    background-color: lighten($colorPurple,5%);
+  }
+}
+
+.btn--orange{
+  background-color: $colorOrange;
+  color: white;
+  &:hover{
+    color: white;
+    background-color: lighten($colorOrange,5%);
+  }
+}
+
+.btn--green{
+  background-color: $colorGreen;
+  color: white;
+  &:hover{
+    color: white;
+    background-color: lighten($colorGreen,5%);
+  }
+}
+
+.btn--gray{
+  background-color: $colorGrayDark;
+  color: white;
+  &:hover{
+    color: white;
+    background-color: lighten($colorGrayDark,5%);
+  }
+}
+
+

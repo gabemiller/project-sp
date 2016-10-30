@@ -8,13 +8,18 @@ $fontRoboto: 'Roboto', sans-serif;
 $fontRobotoCondensed: 'Roboto Condensed', sans-serif;
 
 // Colors
-/* Coolors Exported Palette - coolors.co/cbddff-8b4c4c-ce964e-acb4ba-dd733a */
-/* Coolors Exported Palette - coolors.co/232323-acb4ba-f2f2f2-dd885a-f4965f */
-$colorGrayDark: rgba(35, 35, 35, 1);
-$colorGray: rgba(172, 180, 186, 1);
-$colorGrayLight: rgba(242, 242, 242, 1);
-$colorOrangeDark: rgba(221, 136, 90, 1);
-$colorOrange: rgba(255, 128, 25, 1);
+
+$colorYellowLight: #FFFC82;
+$colorOrangeLight: #FFD890;
+$colorOrange: #FFC300;
+$colorBloodOrange: #E74931;
+$colorGreenLight: #B9F4BC;
+$colorGreen: #1BB978;
+$colorBlueLight: #05d5ff;
+$colorPurple: #53f;
+$colorGrayLight: #f2f2f2;
+$colorGray: #F6F9FC;
+$colorGrayDark: #6b7c93;
 
 // Transitions
 $transition: cubic-bezier(0.215, 0.610, 0.355, 1.000);

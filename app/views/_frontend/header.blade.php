@@ -1,19 +1,59 @@
+<nav class="main-nav">
+    <div class="container-flex">
+        <h1 class="main-nav__logo">
+            <a href="/">
+                <div class="main-nav__logo__cross">
+                    <svg>
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </div>
+                <div class="main-nav__logo__title">
+                    {{Setting::get('site-title')}}
+                </div>
+            </a>
+        </h1>
+        <ul class="main-nav__navbar">
+            <li><a href="#">Menü</a></li>
+            <li><a href="#">Menü</a>
+                <ul>
+                    <li><a href="#">Almenü</a></li>
+                    <li><a href="#">Almenü</a></li>
+                    <li class="active"><a href="#">Almenü</a></li>
+                    <li><a href="#">Almenü</a></li>
+                    <li><a href="#">Almenü</a></li>
+                    <li><a href="#">Almenü</a></li>
+                    <li><a href="#">Almenü</a></li>
+                    <li><a href="#">Almenü</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#">Menü</a></li>
+            <li><a href="#">Menü</a></li>
+            <li><a href="#">Menü</a>
+            </li>
+            <li><a href="#">Menü</a></li>
+            <li><a href="#">Menü</a>
+            </li>
+            <li class="active"><a href="#">Menü</a></li>
+        </ul>
+    <!--ul>
+            @include('_frontend.menu', array('items' => $mainMenu->roots()))
+            </ul-->
+    </div>
+</nav>
+<div class="main-header__background"></div>
 <header class="main-header">
-    <h1 class="main-header__logo">
-        <a href="/">{{Setting::get('site-title')}}</a>
-    </h1>
-    <p class="main-header__slogen">
-        1994-től a daganatos betegek szolgálatában.
-    </p>
-    <button class="main-nav-button">
-        Menü
-        <span class="line"></span>
-    </button>
+    <div class="container-flex">
+        <section class="main-header__content">
+            <h1>Dicsőség Jézus Krisztusnak!</h1>
+            <p>
+                Üdvözöljük a Sajószentpéteri Görög Katolikus Egyházközség megújult weboldalán.
+                Kellemes időtöltést kívánunk.
+            </p>
+            <a class="btn btn--default" href="#hirek">Körülnézek</a>
+        </section>
+    </div>
+    <span class="main-header__arrow animated bounce"></span>
 </header>
 
-<nav class="main-nav">
-    <ul>
-        @include('_frontend.menu', array('items' => $mainMenu->roots()))
-    </ul>
-</nav>
+
 

@@ -5,6 +5,16 @@ html{
   }
 }
 body{
+  overflow-x: hidden;
+  font-family: $fontRobotoCondensed;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: $colorGrayDark;
+}
+
+h1,h2,h3,h4,h5,h6{
   font-family: $fontRoboto;
+  font-weight: 100;
 }
 

@@ -26,7 +26,7 @@
                     <li><a href="#">Almenü</a></li>
                 </ul>
             </li>
-            <li class="active"><a href="#">Menü</a></li>
+            <li><a href="#">Menü</a></li>
             <li><a href="#">Menü</a></li>
             <li><a href="#">Menü</a>
             </li>

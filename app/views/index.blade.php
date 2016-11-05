@@ -41,16 +41,14 @@
                             <footer class="article-item__footer">
                                 <a class="btn btn--green" href="#">Elolvasom</a>
                                 <ul class="article-item__tags">
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
-                                    <li><a href="#">#kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
+                                    <li><a href="#">kategória</a></li>
                                 </ul>
                             </footer>
                         </div>

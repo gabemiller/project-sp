@@ -2,31 +2,8 @@
     <div class="container-flex">
         <div class="col-flex-md-6">
             <nav class="main-footer__menu">
-                <!--ul>
-                    @include('_frontend.menu', array('items' => $mainMenu->roots()))
-                </ul-->
                 <ul>
-                    <li><a href="#">Menü</a></li>
-                    <li><a href="#">Menü</a>
-                        <ul>
-                            <li><a href="#">Almenü</a></li>
-                            <li><a href="#">Almenü</a></li>
-                            <li class="active"><a href="#">Almenü</a></li>
-                            <li><a href="#">Almenü</a></li>
-                            <li><a href="#">Almenü</a></li>
-                            <li><a href="#">Almenü</a></li>
-                            <li><a href="#">Almenü</a></li>
-                            <li><a href="#">Almenü</a></li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="#">Menü</a></li>
-                    <li><a href="#">Menü</a></li>
-                    <li><a href="#">Menü</a>
-                    </li>
-                    <li><a href="#">Menü</a></li>
-                    <li><a href="#">Menü</a>
-                    </li>
-                    <li><a href="#">Menü</a></li>
+                    @include('_frontend.menu', array('items' => $mainMenu->roots()))
                 </ul>
             </nav>
         <section class="main-footer__copyright">

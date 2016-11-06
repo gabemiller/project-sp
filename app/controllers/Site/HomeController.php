@@ -23,7 +23,7 @@ class HomeController extends \BaseController {
         $article = Article::where('published', '=', true)
             ->orderBy('created_at', 'DESC')
             ->select(['id', 'title', 'author_id', 'created_at', 'content','gallery_id'])
-            ->paginate(5);
+            ->paginate(6);
 
         $this->layout->content = View::make('index')
             ->with('articles', $article);

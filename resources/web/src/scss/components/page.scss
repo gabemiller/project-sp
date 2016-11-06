@@ -1,0 +1,45 @@
+.page{
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  color: $colorGrayDarker;
+  &__header{
+    h1 {
+      font-size: 3.5rem;
+      max-width: 800px;
+      margin: 0 auto 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__content{
+    h1,h2,h3,h4,h5,h6{
+      max-width: 800px;
+      margin: 0 auto 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    h4,h5,h6{
+      font-weight: 500;
+    }
+    p{
+      max-width: 800px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    p,ul,ol{
+      font-size: 1.025rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    ul,ol{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__gallery{
+
+  }
+}

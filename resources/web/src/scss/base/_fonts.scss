@@ -1,4 +1,28 @@
 @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Open_Sans-normal-400.woff") format('woff');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Open_Sans-normal-700.woff") format('woff');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Open_Sans-italic-400.woff") format('woff');
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -35,37 +59,5 @@
   font-style: italic;
   font-weight: 400;
   src: url("../fonts/Roboto-italic-400.woff") format('woff');
-  unicode-range: U+0-10FFFF;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/Roboto-italic-500.woff") format('woff');
-  unicode-range: U+0-10FFFF;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Roboto_Condensed-normal-400.woff") format('woff');
-  unicode-range: U+0-10FFFF;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Roboto_Condensed-normal-700.woff") format('woff');
-  unicode-range: U+0-10FFFF;
-}
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/Roboto_Condensed-italic-400.woff") format('woff');
   unicode-range: U+0-10FFFF;
 }

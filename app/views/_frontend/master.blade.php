@@ -21,7 +21,7 @@
     {{ HTML::style('css/app.min.css') }}
 
 </head>
-<body class="{{$bodyClass or 'layout-default'}}">
+<body class="{{$bodyClass}}">
 
     <div style="display: none;visibility: hidden; width: 0;height: 0;position: absolute;z-index: -2">
         <!DOCTYPE PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -33,34 +33,21 @@
             <symbol id="divide_logo" viewBox="0 0 340.51 342.49">
                 <path d="M97.6,22.78A170,170,0,0,1,209.86,6.15q0,142.15,0,284.31a121.32,121.32,0,0,0,33-217.79q0-28.23,0-56.44a171.21,171.21,0,0,1-99,326q0-142.28,0-284.55a121.34,121.34,0,0,0-33,217.33q0,28.52,0,57A171.69,171.69,0,0,1,97.6,22.78Z"/>
             </symbol>
+            <symbol viewBox="0 0 56 56" id="menu">
+                <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M40,41H16c-1.104,0-2-0.896-2-2s0.896-2,2-2
+	h24c1.104,0,2,0.896,2,2S41.104,41,40,41z M40,30H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,30,40,30z
+	 M40,19H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,19,40,19z"/>
+            </symbol>
+            <symbol viewBox="0 0 129 129" id="arrow-down">
+                <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+            </symbol>
         </svg>
     </div>
 
     @include('_frontend.header')
 
-    <main class="main-content">
+    <main id="tartalom" class="main-content">
         @yield('content')
-        <div class="hidden">
-            <div class="col-md-8">
-                @yield('content')
-            </div>
-            <div class="col-md-4 visible-md visible-lg">
-                <section class="card card--image card--erzsebet">
-                </section>
-                <section class="card">
-                    <h2 class="card__subtitle">Számlaszám</h2>
-                    <p class="card__content">11734004-20394369</p>
-                    <h2 class="card__subtitle">Adószám</h2>
-                    <p class="card__content">18414020-1-05</p>
-                </section>
-                <section class="card card--blue">
-                    <h2 class="card__title card__title--onepercent">Kérjük ajánlja fel személyi jövedelmadójának 1%-át </h2>
-                </section>
-                <section class="card card--image card--molino">
-                </section>
-                @yield('sidebar')
-            </div>
-        </div>
     </main>
 
     @include('_frontend.footer')

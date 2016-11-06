@@ -30,7 +30,7 @@
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
-//@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pager";
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/labels";
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/badges";
@@ -68,9 +68,6 @@
 @import "base/helper";
 @import "base/default";
 
-// Layouts
-@import "layouts/layout-maintenance";
-
 // Components
 @import "components/container";
 @import "components/button";
@@ -79,5 +76,10 @@
 @import "components/main";
 @import "components/card";
 @import "components/article";
+@import "components/page";
 @import "components/footer";
 @import "components/credits";
+
+// Layouts
+@import "layouts/layout-maintenance";
+@import "layouts/layout-default";

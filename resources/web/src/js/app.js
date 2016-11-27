@@ -46,4 +46,12 @@
         });
     });
 
+    /**
+     * Table wrapper
+     */
+
+    let $table = $('table');
+
+    $table.wrap("<div class='table-responsive'></div>");
+
 })(jQuery);

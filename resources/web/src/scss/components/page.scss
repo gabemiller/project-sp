@@ -1,3 +1,4 @@
+$contentMaxWidth: 800px;
 .page{
   flex: 1 0 100%;
   display: flex;
@@ -8,7 +9,7 @@
   &__header{
     h1 {
       font-size: 3.5rem;
-      max-width: 800px;
+      max-width: $contentMaxWidth;
       margin: 0 auto 15px;
       padding-left: 15px;
       padding-right: 15px;
@@ -16,7 +17,7 @@
   }
   &__content{
     h1,h2,h3,h4,h5,h6{
-      max-width: 800px;
+      max-width: $contentMaxWidth;
       margin: 0 auto 15px;
       padding-left: 15px;
       padding-right: 15px;
@@ -24,19 +25,35 @@
     h4,h5,h6{
       font-weight: 500;
     }
-    p{
-      max-width: 800px;
+    p,ul,ol{
+      max-width: $contentMaxWidth;
       padding-left: 60px;
       padding-right: 60px;
-    }
-    p,ul,ol{
       font-size: 1.025rem;
-      max-width: 800px;
       margin: 0 auto 30px;
+      line-height: 1.7;
+      @media screen and (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
-    ul,ol{
-      padding-left: 15px;
-      padding-right: 15px;
+    .table-responsive{
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+        padding: 0 15px;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+    }
+    table{
+      max-width: $contentMaxWidth;
+      margin: 0 auto 30px;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+      }
+      td{
+        padding: 5px 15px;
+      }
     }
   }
   &__gallery{

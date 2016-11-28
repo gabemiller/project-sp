@@ -26,11 +26,11 @@
       color: white;
       transition: all 400ms $t;
       &:hover, &:active, &:focus{
-        color: hsla(0,0%,100%,.5);
+        color: $colorGreenLight;//hsla(0,0%,100%,.5);
         text-decoration: none;
         .main-nav__logo__cross{
           svg{
-            fill: hsla(0,0%,100%,.5);
+            fill: $colorGreenLight;//hsla(0,0%,100%,.5);
           }
         }
       }

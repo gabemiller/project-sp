@@ -1,0 +1,188 @@
+.article-list{
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  .article-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 0 15px;
+    display: flex;
+    align-items: stretch;
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      flex: 0 0 (100%/2);
+      max-width: (100%/2);
+      padding: 0 15px 15px;
+      /*&:nth-of-type(2n+1){
+        padding-left: 0;
+      }
+      &:nth-of-type(2n+2){
+        padding-right: 0;
+      }*/
+    }
+
+    @media screen and (min-width: 992px){
+      flex: 0 0 (100%/3);
+      max-width: (100%/3);
+      padding: 0 15px 15px;
+      /*&:nth-of-type(3n+1){
+        padding-left: 0;
+      }
+      &:nth-of-type(3n+3){
+        padding-right: 0;
+      }*/
+    }
+
+    .card{
+      display: flex;
+      flex-direction: column;
+    }
+    &__background{
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      &:before{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparentize(black,.5);
+      }
+    }
+    &__header{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .article-item__title{
+        position: relative;
+        z-index: 2;
+        padding: 15px;
+        margin: 0;
+        &--has-bg{
+          a,a:visited{
+            color: white !important;
+            transition: all 400ms $t;
+            &:hover,&:active{
+              color: $colorGreenLight !important;
+              text-decoration: none;
+            }
+          }
+        }
+        a,a:visited{
+          color: $colorGrayDark;
+          transition: all 400ms $t;
+          &:hover,&:active{
+            color: $colorPurple;
+            text-decoration: none;
+          }
+        }
+      }
+      .article-item__info{
+        position: relative;
+        z-index: 2;
+        padding: 0 15px 15px;
+        margin: 0;
+        color: $colorPurple;
+        &--has-bg{
+          color: white;
+        }
+      }
+    }
+    &__content{
+      flex: 1;
+      padding: 15px;
+    }
+    &__footer{
+      padding: 15px;
+      background-color: $colorGray;
+      .btn{
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+      }
+    }
+    &__tags{
+      display: flex;
+      padding: 15px 0 0;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+      font-family: $fontRoboto;
+      font-weight: 500;
+      align-items: flex-start;
+      justify-content: flex-start;
+      li{
+        margin-right: 5px;
+        &:not(:last-of-type){
+          &:after{
+            content:', ';
+          }
+        }
+        a,a:visited{
+          color: lighten($colorGrayDark,10%);
+          line-height: 1.4;
+          font-size: .875rem;
+          transition: all 400ms $t;
+          &:hover,&:active{
+            color: $colorGreen;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &__pagination{
+    flex: 1 0 100%;
+    padding-top: 15px;
+    text-align: center;
+    .pagination{
+      > li{
+        &:not(:last-of-type){
+          > a, > span{
+            margin-right: 5px;
+          }
+        }
+        &.active{
+          > a, > span{
+            background-color: $colorGreen;
+            color: white;
+            &:hover{
+              background-color: $colorGreen;
+            }
+          }
+        }
+        > a, > span{
+          border: 0;
+          border-radius: 50%;
+          color: $colorGreen;
+          transition: all 400ms $t;
+          &:hover{
+            background-color: $colorGray;
+          }
+        }
+      }
+    }
+  }
+  &__empty{
+    flex: 1 0 100%;
+    p{
+      font-size: 1.25rem;
+      text-align: center;
+      padding: 60px 0;
+      color: $colorGrayDark;
+      text-transform: uppercase;
+    }
+  }
+}

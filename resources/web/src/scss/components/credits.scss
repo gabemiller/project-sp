@@ -1,0 +1,19 @@
+.credits-divide{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &:hover,&:active{
+    text-decoration: none;
+    svg{
+      transform: rotate(45deg);
+      fill: $colorBlueLight;
+    }
+  }
+  svg{
+    height: 30px;
+    width: 37px;
+    fill: $colorGrayDark;
+    transition: all 400ms $t;
+    transform-origin: center;
+  }
+}

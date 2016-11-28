@@ -1,19 +1,32 @@
+<nav class="main-nav">
+    <div class="container-flex">
+        <h1 class="main-nav__logo">
+            <a href="/">
+                <div class="main-nav__logo__cross">
+                    <svg>
+                        <use xlink:href="#cross"></use>
+                    </svg>
+                </div>
+                <div class="main-nav__logo__title">
+                    {{Setting::get('site-title')}}
+                </div>
+            </a>
+        </h1>
+        <button class="mobile-nav__button">
+            <span>Menü</span>
+            <svg>
+                <use xlink:href="#menu"></use>
+            </svg>
+        </button>
+        <ul class="mobile-nav__navbar">
+            @include('_frontend.menu', array('items' => $mainMenu->roots()))
+        </ul>
+    </div>
+</nav>
+<div class="main-header__background"></div>
 <header class="main-header">
-    <h1 class="main-header__logo">
-        <a href="/">{{Setting::get('site-title')}}</a>
-    </h1>
-    <p class="main-header__slogen">
-        1994-től a daganatos betegek szolgálatában.
-    </p>
-    <button class="main-nav-button">
-        Menü
-        <span class="line"></span>
-    </button>
+    @yield('header')
 </header>
 
-<nav class="main-nav">
-    <ul>
-        @include('_frontend.menu', array('items' => $mainMenu->roots()))
-    </ul>
-</nav>
+
 

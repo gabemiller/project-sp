@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#d5805b">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="{{Setting::get('site-title')}}">
-    <meta name="application-name" content="{{Setting::get('site-title')}}">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
     <title>{{Setting::get('site-title')}} @if(!empty($title)) {{'- '.$title }} @endif</title>
@@ -29,6 +26,9 @@
             <symbol id="cross" viewBox="0 0 463.406 463.406">
             <polygon points="378.936,116.465 262.471,116.465 262.471,0 200.935,0 200.935,116.465 84.47,116.465 84.47,178.002
                 200.935,178.002 200.935,463.406 262.471,463.406 262.471,178.002 378.936,178.002 "/>
+            </symbol>
+            <symbol id="greek_cross" viewBox="0 0 162.01 282">
+                <path d="M72,3H96V42h39V65H96V99h69v23H96V285H72V122H3V99H72l0-34H33V42H72V3Z"/>
             </symbol>
             <symbol id="divide_logo" viewBox="0 0 340.51 342.49">
                 <path d="M97.6,22.78A170,170,0,0,1,209.86,6.15q0,142.15,0,284.31a121.32,121.32,0,0,0,33-217.79q0-28.23,0-56.44a171.21,171.21,0,0,1-99,326q0-142.28,0-284.55a121.34,121.34,0,0,0-33,217.33q0,28.52,0,57A171.69,171.69,0,0,1,97.6,22.78Z"/>

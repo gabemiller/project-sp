@@ -4,7 +4,7 @@
             <a href="/">
                 <div class="main-nav__logo__cross">
                     <svg>
-                        <use xlink:href="#cross"></use>
+                        <use xlink:href="#greek_cross"></use>
                     </svg>
                 </div>
                 <div class="main-nav__logo__title">

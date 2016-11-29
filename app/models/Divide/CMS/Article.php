@@ -86,7 +86,8 @@ class Article extends \Eloquent
      */
     public function getParragraph($words = 50, $end = '...')
     {
-        return Str::words(trim(preg_replace('/<[^>]*>/',' ',$this->content)),$words,$end);
+        //return Str::words(trim(preg_replace('/<[^>]*>/',' ',$this->content)),$words,$end);
+        return preg_split('/<hr[^>]*>/', $this->content)[0];
     }
 
     /**

@@ -4,13 +4,13 @@ var webpackConfig = {
     output: {
         filename: "app.min.js"
     },
-    target: "node",
+    target: "web",
     module: {
         loaders: [
             {
                 loader: "babel-loader",
                 test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /node_modules/,
                 query: {
                     presets: ['es2015']
                 }

@@ -118,4 +118,41 @@
       align-self: center;
     }
   }
+  &__call{
+    flex: 1 0 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    @media screen and (max-width: 767px) {
+      flex: 1 0 100%;
+      max-width: 100%;
+      padding-bottom: 15px;
+    }
+    &:first-of-type{
+      @media screen and (min-width: 768px) {
+        padding-right: 15px;
+      }
+    }
+    .card{
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      p{
+        line-height: 1.5;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+        strong{
+          color: $colorPurple;
+          font-weight: normal;
+        }
+      }
+    }
+    &-display{
+      color: $colorPurple;
+      font-size: 1.5rem !important;
+    }
+  }
 }

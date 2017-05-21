@@ -44,14 +44,13 @@
                         </div>
                     </article>
                 @endforeach
-
-                <div class="main-pagination article-list__pagination">
+                <section class="main-pagination article-list__pagination">
                     {{$articles->links()}}
-                </div>
+                </section>
             @else
-                <div class="article-list__empty">
+                <section class="empty-content">
                     <p>Jelenleg nincs megjelenítendő hír!</p>
-                </div>
+                </section>
             @endif
         </div>
     </div>

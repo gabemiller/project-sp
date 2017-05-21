@@ -1,0 +1,10 @@
+.empty-content{
+  flex: 1 0 100%;
+  p{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 60px 0;
+    color: $colorGrayDark;
+    text-transform: uppercase;
+  }
+}

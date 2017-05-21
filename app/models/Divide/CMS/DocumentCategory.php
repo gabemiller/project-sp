@@ -28,14 +28,14 @@ class DocumentCategory extends \Eloquent {
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function parent() {
-        return $this->belongsTo('Divide\CMS\DocumentCategory', 'id', 'parent');
+        return $this->belongsTo('Divide\CMS\DocumentCategory', 'id', 'parent_id');
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function children() {
-        return $this->belongsTo('Divide\CMS\DocumentCategory', 'id', 'parent');
+        return $this->belongsTo('Divide\CMS\DocumentCategory', 'id', 'parent_id');
     }
 
     /**

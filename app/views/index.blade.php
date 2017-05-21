@@ -45,7 +45,7 @@
                     </article>
                 @endforeach
 
-                <div class="article-list__pagination">
+                <div class="main-pagination article-list__pagination">
                     {{$articles->links()}}
                 </div>
             @else

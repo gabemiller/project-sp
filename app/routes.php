@@ -51,6 +51,7 @@ Route::group(array('namespace' => 'Site'), function () {
 
     Route::get('kep/{width}/{height}/{url}', ['uses' => 'GalleryController@resize', 'as' => 'kep.show']);
 
+    Route::get('szent-peteri-levelek', ['uses' => 'NewsController@index', 'as' => 'ujsagok.index']);
 });
 
 
@@ -72,14 +73,6 @@ if (!Request::is('admin') && !Request::is('admin/*')) {
 
         }
     });
-
-    /*
-    Menu::make('secondMenu', function ($menu) {
-
-        $menu->add('Az Egyház életmentő állomás', ['url' => URL::to('#')]);
-    });
-    */
-
 }
 
 

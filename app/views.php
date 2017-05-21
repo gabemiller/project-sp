@@ -13,7 +13,7 @@ View::composer(['site.document.index','site.document.show'], function ($view) {
     View::share('bodyClass', 'layout-error');
 });*/
 
-View::composer(['site.event.index','site.event.show','site.article.show','site.page.show'], function ($view) {
+View::composer(['site.event.index','site.event.show','site.article.show','site.page.show','site.news.index'], function ($view) {
     View::share('bodyClass', 'layout-default');
 });
 

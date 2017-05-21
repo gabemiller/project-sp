@@ -14,26 +14,12 @@
       flex: 0 0 (100%/2);
       max-width: (100%/2);
       padding: 0 15px 15px;
-      /*&:nth-of-type(2n+1){
-        padding-left: 0;
-      }
-      &:nth-of-type(2n+2){
-        padding-right: 0;
-      }*/
     }
-
     @media screen and (min-width: 992px){
       flex: 0 0 (100%/3);
       max-width: (100%/3);
       padding: 0 15px 15px;
-      /*&:nth-of-type(3n+1){
-        padding-left: 0;
-      }
-      &:nth-of-type(3n+3){
-        padding-right: 0;
-      }*/
     }
-
     .card{
       display: flex;
       flex-direction: column;
@@ -139,38 +125,6 @@
           &:hover,&:active{
             color: $colorGreen;
             text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-  &__pagination{
-    flex: 1 0 100%;
-    padding-top: 15px;
-    text-align: center;
-    .pagination{
-      > li{
-        &:not(:last-of-type){
-          > a, > span{
-            margin-right: 5px;
-          }
-        }
-        &.active{
-          > a, > span{
-            background-color: $colorGreen;
-            color: white;
-            &:hover{
-              background-color: $colorGreen;
-            }
-          }
-        }
-        > a, > span{
-          border: 0;
-          border-radius: 50%;
-          color: $colorGreen;
-          transition: all 400ms $t;
-          &:hover{
-            background-color: $colorGray;
           }
         }
       }

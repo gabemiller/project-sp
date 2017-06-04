@@ -23,7 +23,7 @@ return array(
       | your application so that it is used when running Artisan tasks.
       |
      */
-    'url' => 'http://szentpeter.hu',
+    'url' => 'http://erzsebethospice.hu',
     /*
       |--------------------------------------------------------------------------
       | Application Timezone

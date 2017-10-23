@@ -9,6 +9,10 @@
             </p>
             <a class="btn btn--default" href="#tartalom">Körülnézek</a>
         </section>
+        <a href="{{URL('/images/ectfes.jpg')}}" target="_blank" class="main-header__image" >
+            <img src="{{URL('/images/ectfes.jpg')}}"
+                 alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI ÉS CIVIL KAPOCS A TÁRSADALMI FELELŐSSÉGVÁLLALÁS ERŐSÍTÉSÉÉRT SAJÓSZENTPÉTEREN.">
+        </a>
     </div>
     <span class="main-header__arrow animated bounce"></span>
 @stop

@@ -1,0 +1,10 @@
+.main-video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card{
+    position: relative;
+    top: -30px;
+    padding: 15px;
+  }
+}

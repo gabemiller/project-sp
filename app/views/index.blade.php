@@ -17,7 +17,15 @@
     <span class="main-header__arrow animated bounce"></span>
 @stop
 @section('content')
-    <div class="container-flex">
+    <div class="container-flex container-flex--column">
+        <div class="main-video">
+            <div class="card card--with-hover">
+                <iframe class="visible-sm visible-md visible-lg" width="560" height="315" src="https://www.youtube.com/embed/4493uXFmDZI?rel=0&amp;controls=0"
+                        frameborder="0" allowfullscreen></iframe>
+                <iframe class="visible-xs" width="280" height="158" src="https://www.youtube.com/embed/4493uXFmDZI?rel=0&amp;controls=0"
+                        frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
         <div class="article-list">
             @if(count($articles))
                 @foreach($articles as $article)

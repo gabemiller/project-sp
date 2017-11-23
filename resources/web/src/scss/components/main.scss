@@ -7,5 +7,8 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+    &--column{
+      flex-direction: column;
+    }
   }
 }

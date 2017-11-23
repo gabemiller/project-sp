@@ -4,7 +4,7 @@
         <section class="main-header__content">
             <h1>Dicsőség Jézus Krisztusnak!</h1>
             <p>
-                Üdvözöljük a Sajószentpéteri Görög Katolikus Egyházközség megújult weboldalán.
+                Üdvözöljük a Sajószentpéteri Görögkatolikus Parókia megújult weboldalán.
                 Kellemes időtöltést kívánunk.
             </p>
             <a class="btn btn--default" href="#tartalom">Körülnézek</a>

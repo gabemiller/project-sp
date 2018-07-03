@@ -4,12 +4,16 @@
         <section class="main-header__content">
             <h1>Dicsőség Jézus Krisztusnak!</h1>
             <p>
-                Üdvözöljük a Sajószentpéteri Görögkatolikus Parókia megújult weboldalán.
+                Üdvözöljük a Sajószentpéteri Görögkatolikus Parókia és a Szent Péter Közhasznú Alapítvány megújult weboldalán.
                 Kellemes időtöltést kívánunk.
             </p>
             <a class="btn btn--default" href="#tartalom">Körülnézek</a>
         </section>
         <a href="{{URL('/images/ectfes.jpg')}}" target="_blank" class="main-header__image" >
+            <img src="{{URL('/images/etshhle.jpg')}}"
+                 alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI TEVÉKENYSÉGFEJLESZTÉS A SAJÓSZENTPÉTERI HÁTRÁNYOS HELYZETŰ LAKOSSÁG ÉRDEKÉBEN.">
+        </a>
+        <a href="{{URL('/images/ectfes.jpg')}}" target="_blank" class="main-header__image" style="margin-left: 5px" >
             <img src="{{URL('/images/ectfes.jpg')}}"
                  alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI ÉS CIVIL KAPOCS A TÁRSADALMI FELELŐSSÉGVÁLLALÁS ERŐSÍTÉSÉÉRT SAJÓSZENTPÉTEREN.">
         </a>

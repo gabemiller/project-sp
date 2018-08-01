@@ -9,7 +9,7 @@
             </p>
             <a class="btn btn--default" href="#tartalom">Körülnézek</a>
         </section>
-        <a href="{{URL('/images/ectfes.jpg')}}" target="_blank" class="main-header__image" >
+        <a href="{{URL('/images/etshhle.jpg')}}" target="_blank" class="main-header__image" >
             <img src="{{URL('/images/etshhle.jpg')}}"
                  alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI TEVÉKENYSÉGFEJLESZTÉS A SAJÓSZENTPÉTERI HÁTRÁNYOS HELYZETŰ LAKOSSÁG ÉRDEKÉBEN.">
         </a>

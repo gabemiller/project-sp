@@ -9,14 +9,24 @@
             </p>
             <a class="btn btn--default" href="#tartalom">Körülnézek</a>
         </section>
-        <a href="{{URL('/images/etshhle.jpg')}}" target="_blank" class="main-header__image" >
-            <img src="{{URL('/images/etshhle.jpg')}}"
-                 alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI TEVÉKENYSÉGFEJLESZTÉS A SAJÓSZENTPÉTERI HÁTRÁNYOS HELYZETŰ LAKOSSÁG ÉRDEKÉBEN.">
-        </a>
-        <a href="{{URL('/images/ectfes.jpg')}}" target="_blank" class="main-header__image" style="margin-left: 5px" >
-            <img src="{{URL('/images/ectfes.jpg')}}"
-                 alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI ÉS CIVIL KAPOCS A TÁRSADALMI FELELŐSSÉGVÁLLALÁS ERŐSÍTÉSÉÉRT SAJÓSZENTPÉTEREN.">
-        </a>
+        <section class="main-header__tables">
+            <a href="{{URL('/images/gtcss.jpg')}}" target="_blank" class="main-header__image" >
+                <img src="{{URL('/images/gtcss.jpg')}}"
+                     alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI TEVÉKENYSÉGFEJLESZTÉS A SAJÓSZENTPÉTERI HÁTRÁNYOS HELYZETŰ LAKOSSÁG ÉRDEKÉBEN.">
+            </a>
+            <a href="{{URL('/images/gtcsskps.jpg')}}" target="_blank" class="main-header__image" style="margin-left: 5px" >
+                <img src="{{URL('/images/gtcsskps.jpg')}}"
+                     alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI ÉS CIVIL KAPOCS A TÁRSADALMI FELELŐSSÉGVÁLLALÁS ERŐSÍTÉSÉÉRT SAJÓSZENTPÉTEREN.">
+            </a>
+            <a href="{{URL('/images/etshhle.jpg')}}" target="_blank" class="main-header__image" >
+                <img src="{{URL('/images/etshhle.jpg')}}"
+                     alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI TEVÉKENYSÉGFEJLESZTÉS A SAJÓSZENTPÉTERI HÁTRÁNYOS HELYZETŰ LAKOSSÁG ÉRDEKÉBEN.">
+            </a>
+            <a href="{{URL('/images/ectfes.jpg')}}" target="_blank" class="main-header__image" style="margin-left: 5px" >
+                <img src="{{URL('/images/ectfes.jpg')}}"
+                     alt="SAJÓSZENTPÉTERI GÖRÖGKATOLIKUS PARÓKIA EGYHÁZI ÉS CIVIL KAPOCS A TÁRSADALMI FELELŐSSÉGVÁLLALÁS ERŐSÍTÉSÉÉRT SAJÓSZENTPÉTEREN.">
+            </a>
+        </section>
     </div>
     <span class="main-header__arrow animated bounce"></span>
 @stop
